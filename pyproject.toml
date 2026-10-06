@@ -128,3 +128,9 @@ version = {attr = "cps.constants.STABLE_VERSION"}
 
 [tool.setuptools.packages.find]
 include = ["cps*"]
+
+[dependency-groups]
+dev = [
+    "workers-py",
+    "workers-runtime-sdk"
+]
