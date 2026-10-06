@@ -128,3 +128,6 @@ include-package-data = true
 
 [tool.setuptools.dynamic]
 version = {attr = "calibreweb.cps.constants.STABLE_VERSION"}
+
+[tool.setuptools.packages.find]
+include = ["cps*"]
