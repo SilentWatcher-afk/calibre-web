@@ -120,14 +120,11 @@ kobo = [
     "jsonschema>=3.2.0,<4.30.0",
 ]
 
-[project.scripts]
-cps = "calibreweb.__main__:main"
-
 [tool.setuptools]
 include-package-data = true
 
 [tool.setuptools.dynamic]
-version = {attr = "calibreweb.cps.constants.STABLE_VERSION"}
+version = {attr = "cps.constants.STABLE_VERSION"}
 
 [tool.setuptools.packages.find]
 include = ["cps*"]
